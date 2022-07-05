@@ -1,25 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./components/Home/Home";
+import Signup from "./components/Signup/Signup";
+import Transfer from "./components/Transfer/Transfer";
+import AddNewAcc from "./components/AddNewAccount/AddNewAcc";
+import Dashboard from "./components/Dashboard/Dashboard";
+import Accdetails from "./components/Accdetails/Accdetails";
+import StatementOfAccount from "./components/StatementOfAccount/StatementOfAccount";
+import { Routes, Route } from "react-router-dom";
+import ProtectedRoute from "./components/Auth/protectedRoute";
+import { AuthProvider } from "./components/Auth/useAuth";
+import UserContextP from "./Context/userContext";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/logout" element={<Signup />} />
+      <Route path="/login" element={<Home />} />
+      <Route path="/add-new-account" element={<AddNewAcc />} />
+      <Route
+        path="/customer-dashboard"
+        element={
+          <AuthProvider>
+            <Dashboard />
+          </AuthProvider>
+        }
+      />
+      <Route
+        path="/account-details"
+        element={
+          <AuthProvider>
+            <Accdetails />
+          </AuthProvider>
+        }
+      />
+      <Route
+        path="/transfer"
+        element={
+          <AuthProvider>
+            <Transfer />
+          </AuthProvider>
+        }
+      />
+      <Route
+        path="/statement-of-account"
+        element={
+          <AuthProvider>
+            <StatementOfAccount />
+          </AuthProvider>
+        }
+      />
+      {/* <Route path="/api/auth/verify-email" element={<VerifyPage />} /> */}
+    </Routes>
   );
 }
-
 export default App;

@@ -1,0 +1,67 @@
+.sidebar {
+  background-color: rgb(2, 2, 155);
+  color: aliceblue;
+  padding: 2rem;
+  height: 90vh;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar > div.sidebar-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar > div.sidebarHeader svg {
+  width: 100%;
+  height: 6rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.sidebar p {
+  font-size: 2rem;
+  line-height: 0.6;
+  text-align: center;
+  margin-left: -1rem;
+  margin-top: 1.5rem;
+}
+
+.sidebar i {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+}
+
+.sideTag {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.sideTag ul {
+  list-style: none;
+  padding-inline-start: 0;
+  margin-top: 3rem;
+}
+
+.sideTag ul li {
+  padding: 1rem 0 1rem 0;
+  border-bottom: 1px solid #cecece8c;
+}
+
+.sideTag ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.sideTag ul li a:hover {
+  color: orange;
+  text-decoration: none;
+}

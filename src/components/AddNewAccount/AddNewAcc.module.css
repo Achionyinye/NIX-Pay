@@ -1,0 +1,77 @@
+.formCreate {
+  background-color: rgba(255, 255, 255, 0.478);
+  box-shadow: 5px 5px 5px 5px rgb(69, 68, 68);
+  border-radius: 5rem;
+  border: 1px;
+  padding: 3rem 4rem 25rem 4rem;
+  height: 5rem;
+  margin: -40rem 15rem 5rem 30rem;
+  align-content: center;
+  font-family: sans-serif;
+  color: #fff;
+}
+.formCreate > hr {
+  background-color: rgb(69, 68, 68);
+  height: 2px;
+}
+.CreateHeader {
+  font-weight: 600;
+  color: navy;
+}
+.detail {
+  font-weight: 600;
+}
+.label {
+  font-weight: 600;
+  color: navy;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.formCreate > input {
+  height: 2rem;
+  width: 90%;
+  border: 0;
+  background: none;
+  margin-bottom: 25px;
+  border-bottom: 1px solid black;
+  padding: 5px 10px;
+  outline: 0;
+  font-size: 18px;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: text-indent 0.4s 0.4s ease;
+  text-indent: -100%;
+  opacity: 1;
+}
+
+.detail {
+  color: white;
+  font-size: 20px;
+  font-style: oblique;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+}
+
+.submit {
+  color: rgb(2, 2, 70);
+  background-color: transparent;
+  box-shadow: 5px 5px rgb(121, 120, 120);
+  padding: 1%;
+  margin-left: 35%;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+}
+
+/* .success{
+  background-color: red;
+}
+
+.content{
+  background-color: blue;
+} */

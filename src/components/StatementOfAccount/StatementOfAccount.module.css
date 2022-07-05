@@ -1,0 +1,95 @@
+.select{
+  top: 0;
+  margin-top: 7%;
+  margin-left: 20%;
+  background-color: transparent;
+  position: absolute;
+  border: none;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  color: orange;
+  display:grid;
+  margin-left: 30%;
+  gap: 1rem;
+} 
+.accountOption {
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  display: grid;
+  color: #fff;
+  gap: 0.6rem;
+
+}
+.select:hover{
+  color: #fff;
+  background-color: rgb(12, 11, 9);
+}
+ .statementTitle {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: 40rem;
+  position: absolute;
+  color: orange;
+  top: 0;
+  z-index: -1;
+  margin-top: 14%;
+  font-size: 2.5rem;
+}
+
+.tableContent{
+  border-collapse: collapse;
+  width: 80%;
+  position:absolute;
+  top:18rem;
+  margin: 25 0;
+  margin-left: 20%;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 10px;
+  z-index: -1;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  font-family: sans-serif;
+  justify-content: space-evenly;
+  background-color: #fff;
+}
+
+.tableContent thead tr{
+  background-color: rgb(11, 24, 68);
+  color: #fff;
+  text-align: left;
+  font-weight: bold;
+}
+.tableContent th{
+   padding: 12px 15px;
+   border: 1px solid #ccc;
+}
+
+.tableContent td{
+  border: 1px solid #ccc;
+  padding: 12px 15px;
+} 
+
+.tableContent tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.tableContent tbody tr:nth-of-type(even) {
+  background-color: rgb(194, 191, 191);  /* Light grey background on even rows */
+  color: rgb(17, 57, 74);
+}
+
+.tableContent tbody tr:last-of-type {
+  border-bottom: 2px solid rgb(131, 212, 246);
+}
+
+.tableContent tbody tr:hover {
+  background-color: rgb(107, 198, 236);
+  color: #fff;
+}
+ .tableContent tbody tr .statementDetail {
+  font-weight: bold;
+  color: rgb(131, 212, 246);
+ }

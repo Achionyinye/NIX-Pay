@@ -1,0 +1,47 @@
+.mainContainer {
+  display: grid;
+  width: 60%;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.name {
+  position: absolute;
+  top: 15%;
+  left: 48.5%;
+  font-size: 40px;
+  color: #fff;
+}
+
+.number {
+  color: orange;
+  font-weight: 600;
+  font-size: 40px;
+}
+.card {
+  padding: 10px 20px;
+}
+
+.accountNumber {
+  font-size: 20px;
+}
+
+.balance {
+  font-size: 30px;
+}
+
+.card:nth-of-type(odd) {
+  background-color: navy;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.card:nth-of-type(even) {
+  background-color: #fff;
+  border-radius: 15px;
+  color: #000;
+}
+

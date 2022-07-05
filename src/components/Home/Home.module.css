@@ -1,0 +1,121 @@
+.mainContainer {
+  margin-left: 35%;
+  margin-top: 10%;
+  background-color: rgb(14, 14, 73);
+  width: 30%;
+  border-top-left-radius: 5rem;
+  border-bottom-right-radius: 20%;
+}
+.container {
+  background-color: rgba(137, 137, 136, 0.781);
+  width: 93%;
+  padding-top: 2%;
+  padding-left: 7%;
+  border-top-left-radius: 5rem;
+  border-bottom-right-radius: 20%;
+
+}
+
+.submit {
+  background-color: orange;
+  height: 5vh;
+  width: 50%;
+  margin-left: 5rem;
+  border: none;
+  color: rgb(14, 14, 73); 
+  cursor: pointer;
+  margin-bottom: 3rem;
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.loginForm {
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px; 
+  
+}
+.exit{
+background-color: rgb(14, 14, 73);
+width: 30%;
+padding: 2rem;
+border-bottom-right-radius: 25rem;
+}
+
+.signUpBtn{
+  color:white;
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  margin-left: 80%;
+  /* font-weight: 100; */
+  font-size: 1rem;
+  font-style: oblique;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.signUpBtn:hover {
+  color: orange;
+  transform: scale(1.2);
+  transition: 0.2s;
+}
+
+.container > svg{
+  width: 40%;
+  height: 6rem;
+  margin-left: 7rem;
+  color: white;
+  text-align: center;
+}
+
+.container > form.loginForm svg{
+  width: 5%;
+  height: 4rem;
+  margin-left: -2rem;
+  margin-bottom: 1rem;
+  margin-top: -0.5rem;
+  color:rgb(14, 14, 73);
+  text-align: center;
+}
+
+.email {
+  display: flex; 
+}
+.email > input{
+  width: 91%; 
+  height: 50px;
+  padding-left: 10px;
+  font-size: 18px;
+}
+.password {
+  display: flex;
+}
+.password > input{
+width: 91%;
+height: 50px;
+padding-left: 10px;
+}
+
+h5{
+  font-weight: 600;
+   margin-left: 8rem;
+   color: rgb(14, 14, 73);
+   margin-bottom: 2rem;
+   margin-top: -0.3rem;
+}
+
+.loginForm > input{
+  border-radius: 10px;
+  
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+    transition: text-indent 0.4s 0.4s ease; 
+    text-indent: -100%;
+    opacity: 1;
+ }
+
+

@@ -1,0 +1,15 @@
+#text1 {
+  background-color: aliceblue;
+  width: 100%;
+  border: none;
+  text-align: center;
+}
+#text2 {
+  background-color: aliceblue;
+  width: 100%;
+  border: none;
+  text-align: center;
+}
+.display {
+  margin-top: 4rem;
+}

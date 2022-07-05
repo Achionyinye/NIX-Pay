@@ -1,0 +1,8 @@
+.container {
+  display: flex;
+  /* gap: 10px; */
+  margin-top: 18px;
+}
+.transfer {
+  padding-bottom: 50px;
+}

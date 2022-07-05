@@ -1,0 +1,44 @@
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+}
+.firstName img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.firstName a {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.firstName a span {
+  margin-left: 5px;
+}
+
+.firstName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem 0 2rem;
+}
+
+.logo2 img {
+  margin-top: -85px;
+  height: 300%;
+  object-fit: contain;
+  /* margin-bottom: 5rem; */
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+}
