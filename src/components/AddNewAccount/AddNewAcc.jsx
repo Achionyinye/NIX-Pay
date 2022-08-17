@@ -20,7 +20,7 @@ function AddNewAcc() {
       console.log(user);
       const id = user.id;
       const response = await axios.post(
-        `http://localhost:3000/api/add-extra-account/${id}`,
+        `https://fast-peak-09283.herokuapp.com/api/add-extra-account/${id}`,
         details
       );
       console.log("============", response);

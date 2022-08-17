@@ -14,7 +14,7 @@ function Dashboard() {
     console.log(user);
     const id = user.id;
     
-    const url = `http://localhost:3000/api/customer-dashboard`;
+    const url = `https://fast-peak-09283.herokuapp.com/api/customer-dashboard`;
 
     try {
       const response = await axios.get(url, {

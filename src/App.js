@@ -6,15 +6,20 @@ import Dashboard from "./components/Dashboard/Dashboard";
 import Accdetails from "./components/Accdetails/Accdetails";
 import StatementOfAccount from "./components/StatementOfAccount/StatementOfAccount";
 import { Routes, Route } from "react-router-dom";
-import ProtectedRoute from "./components/Auth/protectedRoute";
 import { AuthProvider } from "./components/Auth/useAuth";
 import UserContextP from "./Context/userContext";
+import EmailVerifiedPage from "./components/VerifiedPage/EmailVerifiedPage";
+import history from "../src/components/history";
 
 function App() {
   return (
-    <Routes>
+    <Routes history={history}>
+      <Route path="/" element={<Home />} />
+      <Route
+        path="/api/auth/verify-email"
+        element={<EmailVerifiedPage />}
+      />
       <Route path="/logout" element={<Signup />} />
-      <Route path="/login" element={<Home />} />
       <Route path="/add-new-account" element={<AddNewAcc />} />
       <Route
         path="/customer-dashboard"
@@ -48,7 +53,6 @@ function App() {
           </AuthProvider>
         }
       />
-      {/* <Route path="/api/auth/verify-email" element={<VerifyPage />} /> */}
     </Routes>
   );
 }

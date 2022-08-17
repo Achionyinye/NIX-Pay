@@ -29,7 +29,7 @@ export function AuthProvider({ children }) {
   React.useEffect(() => {
     if (!auth) {
       console.log("Hello");
-        navigate("/login");
+        navigate("/");
     }
   }, [auth]);
   return <authContext.Provider value={auth}>{children}</authContext.Provider>;

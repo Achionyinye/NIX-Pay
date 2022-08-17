@@ -15,7 +15,7 @@ const StatementOfAccount = () => {
     const user = jwt(token); // decode your token here
     const id = user.id;
 
-    const url = `http://localhost:3000/api/customer-dashboard`;
+    const url = `https://fast-peak-09283.herokuapp.com/api/customer-dashboard`;
 
     try {
       const response = await axios.get(url, {
@@ -41,7 +41,7 @@ const StatementOfAccount = () => {
     const id = user.id;
     console.log(user.id);
 
-    const url = `http://localhost:3000/api/bank-statement/${accountNumber}`;
+    const url = `https://fast-peak-09283.herokuapp.com/api/bank-statement/${accountNumber}`;
     try {
       const response = await axios.get(url, {
         headers: {

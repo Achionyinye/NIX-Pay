@@ -14,9 +14,9 @@ function Sidebar() {
     const token = localStorage.getItem("userToken");
     const user = jwt(token); // decode your token here
     console.log(user);
-    const id = user.id;
+    //const id = user.id;
 
-    const url = `http://localhost:3000/api/customer-dashboard`;
+    const url = `https://fast-peak-09283.herokuapp.com/api/customer-dashboard`;
     try {
       const response = await axios.get(url, {
         headers: {
@@ -47,7 +47,7 @@ function Sidebar() {
       <div className={style.sideTag}>
         <ul>
           <li>
-            <Link to="/login">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <Link to="/add-new-account">Add New Account</Link>

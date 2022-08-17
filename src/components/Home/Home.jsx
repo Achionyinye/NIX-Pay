@@ -38,7 +38,7 @@ function Home() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/login",
+        "https://fast-peak-09283.herokuapp.com/api/login",
         data
       );
       console.log("============", response.data);
@@ -89,7 +89,7 @@ function Home() {
         </form>
       </div>
       <div className={style.exit}>
-        <Link to="/">
+        <Link to="/logout">
           <button className={style.signUpBtn}>SIGN UP</button>
         </Link>
       </div>

@@ -50,7 +50,7 @@ function Signup() {
               .pauseFor(2000)
               .deleteAll()
               .typeString(
-                "Welcome to Access Bank, where your finance dream comes to life!"
+                "Welcome to NIX Pay, where your finance dream comes to life!"
               )
               .start();
           }}
@@ -76,7 +76,7 @@ function Signup() {
         onSubmit={async (values) => {
          let result = await axios({
             method: "post",
-            url: "http://localhost:3000/api/user",
+            url: "https://fast-peak-09283.herokuapp.com/api/user",
             data: {
               ...values,
             },
@@ -111,7 +111,7 @@ function Signup() {
           <button type="submit" className={style.submit}>
             Sign Up
           </button>
-          <Link to="/login">
+          <Link to="/">
             <button type="submit" className={style.login}>
               Login
             </button>

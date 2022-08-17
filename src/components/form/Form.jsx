@@ -24,7 +24,7 @@ function FormDetail() {
     const user = jwt(token); // decode your token here
     const id = user.id;
 
-    const url = `http://localhost:3000/api/customer-dashboard`;
+    const url = `https://fast-peak-09283.herokuapp.com/api/customer-dashboard`;
 
     try {
       const response = await axios.get(url, {
@@ -52,7 +52,7 @@ function FormDetail() {
       const id = user.id;
 
       const response = await axios.post(
-        `http://localhost:3000/api/transfer`,
+        `https://fast-peak-09283.herokuapp.com/api/transfer`,
         {
           beneficiaryBank: formData.beneficiaryBank,
           to: formData.to,
