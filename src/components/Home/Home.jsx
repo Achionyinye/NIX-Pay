@@ -9,13 +9,6 @@ import style from "./Home.module.css";
 
 function Home() {
   const [passwordType, setPasswordType] = useState("password");
-  const [passwordInput, setPasswordInput] = useState("");
-
-  const handlePasswordChange = (event) => {
-    // console.log(event.target.value);
-    setPasswordInput(event.target.value);
-  };
-
   
 
   const togglePassword = () => {

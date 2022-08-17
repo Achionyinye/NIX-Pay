@@ -22,7 +22,6 @@ function FormDetail() {
   const getUserDetails = async () => {
     const token = localStorage.getItem("userToken");
     const user = jwt(token); // decode your token here
-    const id = user.id;
 
     const url = `https://fast-peak-09283.herokuapp.com/api/customer-dashboard`;
 
@@ -49,24 +48,23 @@ function FormDetail() {
     try {
       const token = localStorage.getItem("userToken");
       const user = jwt(token); // decode your token here
-      const id = user.id;
 
-      const response = await axios.post(
-        `https://fast-peak-09283.herokuapp.com/api/transfer`,
-        {
-          beneficiaryBank: formData.beneficiaryBank,
-          to: formData.to,
-          beneficiaryName: formData.beneficiaryName,
-          email: formData.email,
-          from: formData.from,
-          amount: formData.amount,
-          transferDescription: formData.transferDescription,
-        },{
-        headers: {
-          Authorization: `Bearer ${token}`,
+    //   const response = await axios.post(
+    //     `https://fast-peak-09283.herokuapp.com/api/transfer`,
+    //     {
+    //       beneficiaryBank: formData.beneficiaryBank,
+    //       to: formData.to,
+    //       beneficiaryName: formData.beneficiaryName,
+    //       email: formData.email,
+    //       from: formData.from,
+    //       amount: formData.amount,
+    //       transferDescription: formData.transferDescription,
+    //     },{
+    //     headers: {
+    //       Authorization: `Bearer ${token}`,
 
-         }
-    });
+    //      }
+    // });
       setFormData({
         beneficiaryBank: "",
         to: "",

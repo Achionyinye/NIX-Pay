@@ -1,9 +1,8 @@
-import React, { StyleSheet } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fas } from "fontawesome.macro";
 
 import "./Header.css";
-import Signup from "../Signup/Signup";
 import logo2 from "../../Images/logo2.png";
 import { Link } from "react-router-dom";
 

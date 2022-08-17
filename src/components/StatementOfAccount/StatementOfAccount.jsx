@@ -13,7 +13,6 @@ const StatementOfAccount = () => {
   const getUserAccountDetails = async () => {
     const token = localStorage.getItem("userToken");
     const user = jwt(token); // decode your token here
-    const id = user.id;
 
     const url = `https://fast-peak-09283.herokuapp.com/api/customer-dashboard`;
 
@@ -37,9 +36,6 @@ const StatementOfAccount = () => {
   const getBankStatement = async () => {
     const token = localStorage.getItem("userToken");
     const user = jwt(token); // decode your token here
-    console.log(user);
-    const id = user.id;
-    console.log(user.id);
 
     const url = `https://fast-peak-09283.herokuapp.com/api/bank-statement/${accountNumber}`;
     try {
@@ -60,7 +56,7 @@ const StatementOfAccount = () => {
 
   useEffect(() => {
     getBankStatement();
-  }, [accountNumber]);
+  }, [accountNumber, getBankStatement]);
   console.log(details, "details");
   return (
     <>

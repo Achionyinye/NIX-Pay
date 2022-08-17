@@ -8,17 +8,12 @@ import jwt from "jwt-decode";
 function Accdetails() {
   const [accDetails, setAccDetails] = useState([]);
   const [userFullName, setuserFullName] = useState("");
-  //const [detailsError, setDetailsError] = useState([]);
-  const [userAccNumber, setUserAccNumber] = useState("");
-  const [userBalance, setUserBalance] = useState("");
 
   const getAccDetails = async () => {
     const token = localStorage.getItem("userToken");
     console.log(token);
     const user = jwt(token); // decode your token here
     console.log(user);
-    const id = user.id;
-    console.log(user.id);
   
     const url = `https://fast-peak-09283.herokuapp.com/api/customer-dashboard`;
     try {

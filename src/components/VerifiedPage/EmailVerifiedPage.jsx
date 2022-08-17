@@ -4,7 +4,6 @@ import { useLocation, Link } from "react-router-dom";
 import { TailSpin } from "react-loader-spinner";
 import style from "../VerifiedPage/EmailVerifiedPage.module.css";
 import img from "../../Images/check-mark.jpg";
-import history from "../history";
 
 function EmailVerifiedPage() {
   const [verified, setVerified] = useState(false);
@@ -25,7 +24,7 @@ function EmailVerifiedPage() {
   };
   useEffect(() => {
     verifyUser();
-  }, []);
+  }, [verifyUser]);
   return (
     <div className={style.container}>
       {!verified ? (

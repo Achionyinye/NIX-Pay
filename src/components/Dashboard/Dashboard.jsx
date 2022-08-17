@@ -12,7 +12,6 @@ function Dashboard() {
     const token = localStorage.getItem("userToken");
     const user = jwt(token); // decode your token here
     console.log(user);
-    const id = user.id;
     
     const url = `https://fast-peak-09283.herokuapp.com/api/customer-dashboard`;
 

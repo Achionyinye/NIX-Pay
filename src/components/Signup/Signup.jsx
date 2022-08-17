@@ -4,9 +4,8 @@ import axios from "axios";
 import { Formik, Field, Form } from "formik";
 import signUpFields from "../Fields/SignUpFields";
 import style from "../Signup/Signup.module.css";
-import { Link, useNavigate } from "react-router-dom";
- import * as Yup from "yup";
-import { AlertDialogLabel } from "@reach/alert-dialog";
+import { Link } from "react-router-dom";
+import * as Yup from "yup";
 
 
  const SignupSchema = Yup.object().shape({
@@ -23,7 +22,7 @@ import { AlertDialogLabel } from "@reach/alert-dialog";
 
 
 function Signup() {
-  const [data, setData] = useState({
+  const [data] = useState({
     fullName: "",
     gender: "",
     userName: "",
