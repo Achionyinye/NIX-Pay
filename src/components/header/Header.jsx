@@ -4,7 +4,7 @@ import { fas } from "fontawesome.macro";
 
 import "./Header.css";
 import Signup from "../Signup/Signup";
-// import logo2 from "/Users/decagon/Desktop/access-bank-clone/src/Images/logo2.png";
+import logo2 from "../../Images/logo2.png";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -23,7 +23,7 @@ const Header = () => {
         </Link>
       </div>
       <a href="#" className="logo2">
-        {/* <img src={logo2} alt="logo" /> */}
+        <img src={logo2} alt="logo" />
       </a>
     </div>
   );
