@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import style from "./Form.module.css";
 import axios from "axios";
-import jwt from "jwt-decode";
 
 function FormDetail() {
   const [details, setDetails] = useState({});
