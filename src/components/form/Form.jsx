@@ -21,7 +21,6 @@ function FormDetail() {
 
   const getUserDetails = async () => {
     const token = localStorage.getItem("userToken");
-    const user = jwt(token); // decode your token here
 
     const url = `https://fast-peak-09283.herokuapp.com/api/customer-dashboard`;
 
@@ -47,7 +46,6 @@ function FormDetail() {
     e.preventDefault();
     try {
       const token = localStorage.getItem("userToken");
-      const user = jwt(token); // decode your token here
 
     //   const response = await axios.post(
     //     `https://fast-peak-09283.herokuapp.com/api/transfer`,
