@@ -7,7 +7,6 @@ import Accdetails from "./components/Accdetails/Accdetails";
 import StatementOfAccount from "./components/StatementOfAccount/StatementOfAccount";
 import { Routes, Route } from "react-router-dom";
 import { AuthProvider } from "./components/Auth/useAuth";
-import UserContextP from "./Context/userContext";
 import EmailVerifiedPage from "./components/VerifiedPage/EmailVerifiedPage";
 import history from "../src/components/history";
 
