@@ -3,7 +3,6 @@ import axios from "axios";
 import Header from "../header/Header";
 import Sidebar from "../Sidebar/Sidebar";
 import style from "./StatementOfAccount.module.css";
-import jwt from "jwt-decode";
 
 const StatementOfAccount = () => {
   const [details, setDetails] = useState([]);
