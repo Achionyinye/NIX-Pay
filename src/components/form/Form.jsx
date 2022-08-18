@@ -44,7 +44,7 @@ function FormDetail() {
   const submitDetails = async (e) => {
     e.preventDefault();
     try {
-      const token = localStorage.getItem("userToken");
+      // const token = localStorage.getItem("userToken");
 
     //   const response = await axios.post(
     //     `https://fast-peak-09283.herokuapp.com/api/transfer`,
