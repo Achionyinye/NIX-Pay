@@ -11,20 +11,21 @@ function EmailVerifiedPage() {
 
   const { search } = location;
   console.log(search);
-  const verifyUser = async () => {
-    try{
-      const verify = await axios.get(
-        `https://fast-peak-09283.herokuapp.com/api/auth/verify-email/${search}`
-      );
-      console.log(verify);
-      setVerified(true);
-    }catch(error){
-      console.log(error);
-    }
-  };
+  
   useEffect(() => {
+    const verifyUser = async () => {
+      try{
+        const verify = await axios.get(
+          `https://fast-peak-09283.herokuapp.com/api/auth/verify-email/${search}`
+        );
+        console.log(verify);
+        setVerified(true);
+      }catch(error){
+        console.log(error);
+      }
+    };
     verifyUser();
-  }, [verifyUser]);
+  }, [search]);
   return (
     <div className={style.container}>
       {!verified ? (

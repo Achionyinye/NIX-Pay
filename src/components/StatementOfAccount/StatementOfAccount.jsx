@@ -31,29 +31,29 @@ const StatementOfAccount = () => {
     getUserAccountDetails();
   }, []);
 
-  const getBankStatement = async () => {
-    const token = localStorage.getItem("userToken");
-
-    const url = `https://fast-peak-09283.herokuapp.com/api/bank-statement/${accountNumber}`;
-    try {
-      const response = await axios.get(url, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
-
-      const responseData = response.data;
-      console.log(responseData, "responseData");
-      setDetails(responseData.transactions);
-      // console.log(responseData);
-    } catch (error) {
-      console.log("this error", error);
-    }
-  };
 
   useEffect(() => {
+    const getBankStatement = async () => {
+      const token = localStorage.getItem("userToken");
+  
+      const url = `https://fast-peak-09283.herokuapp.com/api/bank-statement/${accountNumber}`;
+      try {
+        const response = await axios.get(url, {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        });
+  
+        const responseData = response.data;
+        console.log(responseData, "responseData");
+        setDetails(responseData.transactions);
+        // console.log(responseData);
+      } catch (error) {
+        console.log("this error", error);
+      }
+    };
     getBankStatement();
-  }, [accountNumber, getBankStatement]);
+  }, [accountNumber]);
   console.log(details, "details");
   return (
     <>
